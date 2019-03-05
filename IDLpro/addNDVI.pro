@@ -45,11 +45,11 @@ pro addNDVI
   
   OPENW, lun, out_name,/get_lun
   WRITEU,lun, images
-  CLOSE, lun & FREE_LUN, lun   ;关闭释放内存
+  CLOSE, lun & FREE_LUN, lun   ;鹿脴卤脮脢脥路脜脛脷麓忙
 
  ; out_bnames = ['SensorZenith','SensorAzimuth','SolorZenith','SolorAzimuth','red_sur_ref','blue_sur_ref','red_real_ref','blue_real_ref']
 
-  ;输出hdr文件
+  ;脢盲鲁枚hdr脦脛录镁
   ENVI_SETUP_HEAD,fname = out_name,$
     ns = ns, nl =nl, nb=1,$
     ;bnames=bnames, $
