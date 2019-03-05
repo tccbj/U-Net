@@ -54,11 +54,13 @@ The model is trained for 1000 epochs, though it converged early at about 100 epo
 
 ### Results
 
-Use the trained model to do segmentation on test images, the result is statisfactory.
+Use the trained model to do segmentation on test images, here are some of the results.
 
-![img/0test.png](img/0test.png)
+![img/good_raw.tif](img/good_raw.tif)![img/good_gt.tif](img/good_gt.tif)![img/good_pre.tif](img/good_pre.tif)
 
-![img/0label.png](img/0label.png)
+![img/med_raw.tif](img/med_raw.tif)![img/med_gt.tif](img/med_gt.tif)![img/med_pre.tif](img/med_pre.tif)
+
+![img/bad_raw.tif](img/bad_raw.tif)![img/bad_gt.tif](img/bad_gt.tif)![img/bad_pre.tif](img/bad_pre.tif)
 
 
 ## About Keras
