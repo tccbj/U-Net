@@ -44,6 +44,10 @@ lr_decay: 0.5(after 6 patience)
 
 The model is trained for 1000 epochs, though it converged early at about 100 epochs.
 
+learning curve
+
+![img/train_on_9band_1000epoch_unet.png](img/train_on_9band_1000epoch_unet.png)
+
 ---
 
 ### Environments
@@ -51,15 +55,21 @@ The model is trained for 1000 epochs, though it converged early at about 100 epo
 * Spyder(Python 3.5)
 * Tensorflow(1.12.0)
 * Keras(2.2.4)
+* GDAL(2.3.2)
+* numpy(1.14.2)
 
 ### Results
 
-Use the trained model to do segmentation on test images, the result is statisfactory.
+Use the trained model to do segmentation on test images, here are some of the results.
 
-![img/0test.png](img/0test.png)
+![img/result.png](img/result.png)
 
-![img/0label.png](img/0label.png)
-
+Accuracy
+![img/acc_0.66_0.73.png](img/acc_0.66_0.73.png)
+Dice
+![img/dice_0.65_0.695.png](img/dice_0.65_0.695.png)
+Jaccard
+![img/jaccard_0.65_0.695.png](img/jaccard_0.65_0.695.png)
 
 ## About Keras
 
