@@ -7,7 +7,7 @@ pro treemosaic
   out_name = outpath + 'tree_pre_gt.img'
 
 
-  infile = FILE_SEARCH(inpath,'*.tif',COUNT = num)     ;自动寻找文件
+  infile = FILE_SEARCH(inpath,'*.tif',COUNT = num)     ;鑷姩瀵绘壘鏂囦欢
   print,num
   use_see_through = MAKE_ARRAY(num,value=1)
   see_through_val = MAKE_ARRAY(num,value=-999)
@@ -40,10 +40,10 @@ pro treemosaic
   UL_corners_Y = DBLARR(num)
 
   FOR m=0,num-1 DO BEGIN
-    pts = [ [dims[1,m], dims[3,m]],   $ ; UL  左上
-      [dims[2,m], dims[3,m]],   $ ; UR  右上
-      [dims[1,m], dims[4,m]],   $ ; LL  左下
-      [dims[2,m], dims[4,m]] ]    ; LR  右下
+    pts = [ [dims[1,m], dims[3,m]],   $ ; UL  宸︿笂
+      [dims[2,m], dims[3,m]],   $ ; UR  鍙充笂
+      [dims[1,m], dims[4,m]],   $ ; LL  宸︿笅
+      [dims[2,m], dims[4,m]] ]    ; LR  鍙充笅
     ENVI_CONVERT_FILE_COORDINATES, fids[m], pts[0,*], pts[1,*], xmap, ymap, /TO_MAP
     UL_corners_X[m] = xmap[0]
     UL_corners_Y[m] = ymap[0]
