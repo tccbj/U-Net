@@ -56,6 +56,7 @@ learning curve
 * Tensorflow(1.12.0)
 * Keras(2.2.4)
 * GDAL(2.3.2)
+* numpy(1.14.2)
 
 ### Results
 
