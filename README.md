@@ -55,12 +55,19 @@ learning curve
 * Spyder(Python 3.5)
 * Tensorflow(1.12.0)
 * Keras(2.2.4)
+* GDAL(2.3.2)
 
 ### Results
 
 Use the trained model to do segmentation on test images, here are some of the results.
 
 ![img/result.png](img/result.png)
+Accuracy
+![img/acc_0.66_0.73.png](img/acc_0.66_0.73.png)
+Dice
+![img/dice_0.65_0.695.png](img/dice_0.65_0.695.png)
+Jaccard
+![img/jaccard_0.65_0.695.png](img/jaccard_0.65_0.695.png)
 
 ## About Keras
 
