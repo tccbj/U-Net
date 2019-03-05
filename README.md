@@ -62,6 +62,7 @@ learning curve
 Use the trained model to do segmentation on test images, here are some of the results.
 
 ![img/result.png](img/result.png)
+
 Accuracy
 ![img/acc_0.66_0.73.png](img/acc_0.66_0.73.png)
 Dice
