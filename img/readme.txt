@@ -1,1 +1,1 @@
-This file contains several images
+This file contains several result images
