@@ -44,6 +44,10 @@ lr_decay: 0.5(after 6 patience)
 
 The model is trained for 1000 epochs, though it converged early at about 100 epochs.
 
+learning curve
+
+![img/train_on_9band_1000epoch_unet.png](img/train_on_9band_1000epoch_unet.png)
+
 ---
 
 ### Environments
@@ -56,12 +60,7 @@ The model is trained for 1000 epochs, though it converged early at about 100 epo
 
 Use the trained model to do segmentation on test images, here are some of the results.
 
-![img/good_raw.tif](img/good_raw.tif)![img/good_gt.tif](img/good_gt.tif)![img/good_pre.tif](img/good_pre.tif)
-
-![img/med_raw.tif](img/med_raw.tif)![img/med_gt.tif](img/med_gt.tif)![img/med_pre.tif](img/med_pre.tif)
-
-![img/bad_raw.tif](img/bad_raw.tif)![img/bad_gt.tif](img/bad_gt.tif)![img/bad_pre.tif](img/bad_pre.tif)
-
+![img/result.png](img/result.png)
 
 ## About Keras
 
