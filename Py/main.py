@@ -52,14 +52,6 @@ def myTrain(unet, outweights, train_image_path, train_mask_path, val_image_path,
     history = model.fit_generator(myGene, steps_per_epoch=train_step, epochs=epochs, callbacks=call_backs, validation_data=valGene, validation_steps=val_step)#, initial_epoch=49)
     return outweights,history
 
-def myEvaluate(unet, weights, eva_image_path, eva_mask_path, batch_size=8, steps=25):
-    testgene = dataGenerator(eva_image_path, eva_mask_path, batch_size=batch_size, mode='test')
-    model = unet(pretrained_weights = weights)
-    model.compile(optimizer = Adam(lr = 1e-4), loss = be_dice_loss, metrics = ['accuracy',my_accuracy,jaccard_coef, dice_coef])
-    #steps=len(generator)/batch_size, need to be cal self
-    result = model.evaluate_generator(testgene,steps=steps,verbose=1)
-    return result
-
 def myPredict(unet, weights, predict_path, batch_size=8, steps=25):
     #------预测生成器------
     predictGene = predictGenerator(predict_path, batch_size=batch_size)
